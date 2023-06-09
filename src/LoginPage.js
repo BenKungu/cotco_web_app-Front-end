@@ -15,7 +15,7 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can perform login logic here, such as making an API call
+    // Put login logic here/API call
     console.log("Username:", username);
     console.log("Password:", password);
   };
