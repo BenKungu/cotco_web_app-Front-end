@@ -1,5 +1,5 @@
 import React from "react";
-import "./Collection.css"; // Import the CSS file for styling
+import "./Outlets.css"; // Import the CSS file for styling
 
 const Collection = () => {
   return (

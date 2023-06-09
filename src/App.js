@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./LoginPage";
 import DashboardPage from "./DashboardPage";
-import Collection from "./Collection";
+import Outlets from "./Outlets";
 import CotcoOffice from "./CotcoOffice";
 
 const App = () => {
@@ -11,7 +11,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
-        <Route path="/collection" element={<Collection />} />
+        <Route path="/Outlets" element={<Outlets />} />
         <Route path="/office" element={<CotcoOffice />} />
       </Routes>
     </Router>

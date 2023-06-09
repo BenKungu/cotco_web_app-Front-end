@@ -10,7 +10,7 @@ const DashboardPage = () => {
           <button>Farmers</button>
           <button>Sales</button>
           <button>Users</button>
-          <button>Collections</button>
+          <button>Outlets</button>
           <button>Vouchers</button>
         </div>
       </div>
