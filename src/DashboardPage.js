@@ -5,79 +5,87 @@ const DashboardPage = () => {
   return (
     <div className="dashboard-container">
       <div className="dashboard-header">
-        <h2>Welcome to Cotco Admin</h2>
+        <h1>System Admin</h1>
         <div className="header-buttons">
-          <button>Farmers</button>
-          <button>Sales</button>
-          <button>Users</button>
-          <button>Outlets</button>
-          <button>Vouchers</button>
+          <button>Add User</button>
+          <button>Add Outlet</button>
+          <button>Create Account</button>
+          <button>Manage Accounts</button>
+          <button>Manage Outlets</button>
+        </div>
+        <div className="side-bar">
+          Users <br />
+          Accounts <br />
+          Outlets <br />
+          Farmers
+          <br />
+          Sales <br />
+          Vouchers
+          <br />
         </div>
       </div>
       <table className="dashboard-table">
         <thead>
           <tr>
-            <th>Farmer</th>
-            <th>Phone</th>
-            <th>Sales</th>
-            <th>Vouchers</th>
+            <th>Outlet</th>
             <th>Location</th>
+            <th>Mobile Number</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>John</td>
-            <td>074774488</td>
-            <td>30000</td>
             <td></td>
             <td></td>
-          </tr>
-          <tr>
-            <td>Kelvin</td>
-            <td>07248899</td>
-            <td>40000</td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>Martin</td>
-            <td>07348888</td>
-            <td>50000</td>
             <td></td>
             <td></td>
-          </tr>
-          <tr>
-            <td>Martin</td>
-            <td>07348888</td>
-            <td>50000</td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>Martin</td>
-            <td>07348888</td>
-            <td>50000</td>
             <td></td>
             <td></td>
-          </tr>
-          <tr>
-            <td>Kelvin</td>
-            <td>07248899</td>
-            <td>40000</td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>Kelvin</td>
-            <td>07248899</td>
-            <td>40000</td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
-            <td>Kelvin</td>
-            <td>07248899</td>
-            <td>40000</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
           </tr>

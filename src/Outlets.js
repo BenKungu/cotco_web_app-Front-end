@@ -5,7 +5,7 @@ const Collection = () => {
   return (
     <div className="collection-container">
       <div className="collection-header">
-        <h2>Welcome to Cotco Payment Collection</h2>
+        <h1>Payment Outlet</h1>
         <div className="header-buttons">
           <button>Redeem Voucher</button>
           <button>Validatae Voucher</button>

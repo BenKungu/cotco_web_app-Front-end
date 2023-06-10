@@ -27,6 +27,14 @@
   display: flex;
 }
 
+.side-bar {
+  margin-left: 10px;
+  display: grid;
+  justify-content: space-between;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
 .header-buttons button {
   padding: 10px 16px;
   margin-left: 10px;

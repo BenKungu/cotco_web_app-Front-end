@@ -1,34 +1,53 @@
 import React, { useState } from "react";
+import axios from "axios"; // Import axios for making API requests
 import "./LoginPage.css"; // Import the CSS file for styling
 
 const LoginPage = () => {
-  const [username, setUsername] = useState("");
+  const [usernameOrEmail, setUsernameOrEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
   const handleUsernameChange = (e) => {
-    setUsername(e.target.value);
+    setUsernameOrEmail(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Put login logic here/API call
-    console.log("Username:", username);
-    console.log("Password:", password);
+    setError(""); // Clear any previous errors
+
+    try {
+      const response = await axios.post(
+        "https://api-test.blink.co.ke/api/auth/signin",
+        { usernameOrEmail, password }
+      );
+      // Assuming your backend returns a token upon successful login
+      const token = response.data.token;
+
+      // Store the token in localStorage or a React context for later use
+      localStorage.setItem("token", token);
+
+      // Redirect the user to a different page, e.g., dashboard
+      window.location.href = "/dashboard";
+    } catch (error) {
+      // Handle authentication errors
+      setError("Invalid username or password");
+    }
   };
 
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit}>
         <h2>Login</h2>
+        {error && <div className="error-message">{error}</div>}
         <div className="form-group">
           <label>Username:</label>
           <input
             type="text"
-            value={username}
+            value={usernameOrEmail}
             onChange={handleUsernameChange}
             placeholder="Enter your username"
           />

@@ -5,7 +5,7 @@ const CotcoOffice = () => {
   return (
     <div className="cotco-container">
       <div className="cotco-header">
-        <h2>Welcome to Cotco Office</h2>
+        <h1>Cotco Office</h1>
         <div className="header-buttons">
           <button>Create Farmer</button>
           <button>Create Sales</button>
