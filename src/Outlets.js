@@ -1,86 +1,73 @@
 import React from "react";
 import "./Outlets.css"; // Import the CSS file for styling
+import OutletSideNav from "./OutletSideNav";
 
 const Collection = () => {
   return (
-    <div className="collection-container">
-      <div className="collection-header">
-        <h1>Payment Outlet</h1>
-        <div className="header-buttons">
-          <button>Redeem Voucher</button>
-          <button>Validatae Voucher</button>
-          <button>Make Payment</button>
+    <div className="outlet-container">
+      <div className="dashboard-content">
+        <div className="outlet-header">
+          <h1 className="header-title">Outlet</h1>
+          <div className="header-buttons">
+            <button>Redeem Voucher</button>
+            <button>Validatae Voucher</button>
+            <button>Make Payment</button>
+          </div>
+        </div>
+        <div className="table-wrapper">
+          <table className="outlet-table">
+            <thead>
+              <tr>
+                <th>Transaction Id</th>
+                <th>Farmer Name</th>
+                <th>Amount</th>
+                <th>Voucher code</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#238400</td>
+                <td>Jack</td>
+                <td>30000</td>
+                <td>NBCID24C</td>
+                <td>11:23PM</td>
+              </tr>
+              <tr>
+                <td>#238400</td>
+                <td>Jack</td>
+                <td>30000</td>
+                <td>NBCID24C</td>
+                <td>11:23PM</td>
+              </tr>
+              <tr>
+                <td>#238400</td>
+                <td>Jack</td>
+                <td>30000</td>
+                <td>NBCID24C</td>
+                <td>11:23PM</td>
+              </tr>
+              <tr>
+                <td>#238400</td>
+                <td>Jack</td>
+                <td>30000</td>
+                <td>NBCID24C</td>
+                <td>11:23PM</td>
+              </tr>
+              <tr>
+                <td>#238400</td>
+                <td>Jack</td>
+                <td>30000</td>
+                <td>NBCID24C</td>
+                <td>11:23PM</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-      <table className="collection-table">
-        <thead>
-          <tr>
-            <th>Farmer</th>
-            <th>Phone</th>
-            <th>Sales</th>
-            <th>Vouchers</th>
-            <th>Location</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>074774488</td>
-            <td>30000</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Kelvin</td>
-            <td>07248899</td>
-            <td>40000</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Martin</td>
-            <td>07348888</td>
-            <td>50000</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Martin</td>
-            <td>07348888</td>
-            <td>50000</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Martin</td>
-            <td>07348888</td>
-            <td>50000</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Kelvin</td>
-            <td>07248899</td>
-            <td>40000</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Kelvin</td>
-            <td>07248899</td>
-            <td>40000</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Kelvin</td>
-            <td>07248899</td>
-            <td>40000</td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="side-navigation">
+        <OutletSideNav />
+      </div>
     </div>
   );
 };

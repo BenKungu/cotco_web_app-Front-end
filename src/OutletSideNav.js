@@ -1,18 +1,15 @@
 import React from "react";
 
-const SideNavigation = () => {
+const OutletSideNav = () => {
   return (
     <div className="side-navigation">
       <ul>
-        <li>Outlets</li>
-        <li>Users</li>
-        <li>Farmers</li>
+        <li>Transactions</li>
         <li>Accounts</li>
-        <li>Sales</li>
         <li>Vouchers</li>
       </ul>
     </div>
   );
 };
 
-export default SideNavigation;
+export default OutletSideNav;
