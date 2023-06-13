@@ -1,8 +1,15 @@
 /* DashboardPage.css */
 
 .cotco-container {
+  display: flex;
   padding: 20px;
   background-color: #f2f2f2;
+}
+
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .cotco-header {
@@ -17,11 +24,9 @@
   font-weight: bold;
   color: #333;
 }
-
-/*.header-buttons .clicked {
-    background-color: #1976d2;
-  }
-  */
+.table-wrapper {
+  margin-left: 10px;
+}
 
 .header-buttons {
   display: flex;
@@ -71,4 +76,33 @@
 
 .cotco-table tbody tr:hover {
   background-color: #f0f0f0;
+}
+.side-navigation {
+  background-color: #f1f1f1;
+  width: 200px;
+  margin-top: 20px;
+  padding-top: 10px;
+  order: -1;
+}
+
+.side-navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-navigation ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.side-navigation ul li:hover {
+  background-color: #ddd;
+}
+.dashboard-content {
+  display: flex;
+  flex: 1;
+}
+.dashboard-content .table-wrapper {
+  flex: 1;
 }

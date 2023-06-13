@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import axios from "axios"; // Import axios for making API requests
-import "./LoginPage.css"; // Import the CSS file for styling
+import axios from "axios";
+import "./LoginPage.css";
 
 const LoginPage = () => {
   const [usernameOrEmail, setUsernameOrEmail] = useState("");
@@ -17,20 +17,20 @@ const LoginPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(""); // Clear any previous errors
+    setError(""); // Clear previous errors
 
     try {
       const response = await axios.post(
         "https://api-test.blink.co.ke/api/auth/signin",
         { usernameOrEmail, password }
       );
-      // Assuming your backend returns a token upon successful login
+      // backend returns a token upon successful login
       const token = response.data.token;
 
       // Store the token in localStorage or a React context for later use
       localStorage.setItem("token", token);
 
-      // Redirect the user to a different page, e.g., dashboard
+      // Redirect the user to a different page
       window.location.href = "/dashboard";
     } catch (error) {
       // Handle authentication errors
