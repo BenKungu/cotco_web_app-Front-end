@@ -4,6 +4,7 @@ import LoginPage from "./LoginPage";
 import DashboardPage from "./DashboardPage";
 import Outlets from "./Outlets";
 import CotcoOffice from "./CotcoOffice";
+import SelfService from "./SelfService";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/outlets" element={<Outlets />} />
         <Route path="/office" element={<CotcoOffice />} />
+        <Route path="/self" element={<SelfService />} />
       </Routes>
     </Router>
   );

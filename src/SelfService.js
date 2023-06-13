@@ -1,62 +1,61 @@
 import React from "react";
-import "./Outlets.css"; // Import the CSS file for styling
-import OutletSideNav from "./OutletSideNav";
+import "./SelfService.css";
 
-const Outlets = () => {
+const SelfService = () => {
   return (
-    <div className="outlet-container">
+    <div className="self-container">
       <div className="dashboard-content">
-        <div className="outlet-header">
-          <h1 className="header-title">Outlet</h1>
+        <div className="self-header">
+          <h1 className="header-title">Cotco Mobile Payment</h1>
           <div className="header-buttons">
-            <button>Redeem Voucher</button>
-            <button>Validatae Voucher</button>
-            <button>Make Payment</button>
+            <button>Confirm Voucher</button>
+            <button>Redeem to mobile</button>
+            <button>Check Voucher Balance</button>
           </div>
         </div>
         <div className="table-wrapper">
-          <table className="outlet-table">
+          <table className="self-table">
             <thead>
               <tr>
                 <th>Transaction Id</th>
-                <th>Farmer Name</th>
+                <th>Outlet name</th>
                 <th>Amount</th>
-                <th>Voucher code</th>
+                <th>Voucher</th>
                 <th>Time</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>#238400</td>
-                <td>Jack</td>
+                <td>Nairobi</td>
                 <td>30000</td>
                 <td>NBCID24C</td>
                 <td>11:23PM</td>
               </tr>
               <tr>
                 <td>#238400</td>
-                <td>Jack</td>
+                <td>Kilifi</td>
                 <td>30000</td>
                 <td>NBCID24C</td>
                 <td>11:23PM</td>
               </tr>
               <tr>
                 <td>#238400</td>
-                <td>Jack</td>
+                <td>Eldoret</td>
                 <td>30000</td>
                 <td>NBCID24C</td>
                 <td>11:23PM</td>
               </tr>
               <tr>
                 <td>#238400</td>
-                <td>Jack</td>
+                <td>Kisii</td>
                 <td>30000</td>
                 <td>NBCID24C</td>
                 <td>11:23PM</td>
               </tr>
               <tr>
                 <td>#238400</td>
-                <td>Jack</td>
+                <td>Turkana</td>
                 <td>30000</td>
                 <td>NBCID24C</td>
                 <td>11:23PM</td>
@@ -65,11 +64,8 @@ const Outlets = () => {
           </table>
         </div>
       </div>
-      <div className="side-navigation">
-        <OutletSideNav />
-      </div>
     </div>
   );
 };
 
-export default Outlets;
+export default SelfService;
