@@ -34,55 +34,6 @@ const CotcoOffice = () => {
               <td></td>
               <td></td>
             </tr>
-            <tr>
-              <td>Kelvin</td>
-              <td>07248899</td>
-              <td>40000</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Martin</td>
-              <td>07348888</td>
-              <td>50000</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Martin</td>
-              <td>07348888</td>
-              <td>50000</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Martin</td>
-              <td>07348888</td>
-              <td>50000</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Kelvin</td>
-              <td>07248899</td>
-              <td>40000</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Kelvin</td>
-              <td>07248899</td>
-              <td>40000</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>Kelvin</td>
-              <td>07248899</td>
-              <td>40000</td>
-              <td></td>
-              <td></td>
-            </tr>
           </tbody>
         </table>
       </div>
