@@ -1,5 +1,5 @@
 import React from "react";
-import "./SelfService.css";
+import "../Css_files/SelfService.css";
 
 const SelfService = () => {
   return (

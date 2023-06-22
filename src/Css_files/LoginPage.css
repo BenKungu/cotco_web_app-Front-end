@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("./cottonimg.jpeg");
+  background-image: url("../Media/cottonimg.jpeg");
   background-size: cover;
   background-position: center;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import "./DashboardPage.css";
+import "../Css_files/DashboardPage.css";
 import SideNavigation from "./SideNavigation";
 
 const DashboardPage = () => {

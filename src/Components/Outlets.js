@@ -1,5 +1,5 @@
 import React from "react";
-import "./Outlets.css"; // Import the CSS file for styling
+import "../Css_files/Outlets.css"; // Import the CSS file for styling
 import OutletSideNav from "./OutletSideNav";
 
 const Outlets = () => {

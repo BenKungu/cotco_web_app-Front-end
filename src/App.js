@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginPage from "./LoginPage";
-import DashboardPage from "./DashboardPage";
-import Outlets from "./Outlets";
-import CotcoOffice from "./CotcoOffice";
-import SelfService from "./SelfService";
+import LoginPage from "./Components/LoginPage";
+import DashboardPage from "./Components/DashboardPage";
+import Outlets from "./Components/Outlets";
+import CotcoOffice from "./Components/CotcoOffice";
+import SelfService from "./Components/SelfService";
 
 const App = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import "./CotcoOffice.css";
+import "../Css_files/CotcoOffice.css";
 import CotcoSideNav from "./CotcoSideNav";
 
 const CotcoOffice = () => {
