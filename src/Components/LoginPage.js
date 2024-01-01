@@ -7,10 +7,6 @@ const LoginPage = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleUsernameChange = (e) => {
-    setUsernameOrEmail(e.target.value);
-  };
-
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
