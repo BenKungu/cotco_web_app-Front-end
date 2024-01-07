@@ -41,20 +41,6 @@ const SelfService = () => {
               </tr>
               <tr>
                 <td>#238400</td>
-                <td>Eldoret</td>
-                <td>30000</td>
-                <td>NBCID24C</td>
-                <td>11:23PM</td>
-              </tr>
-              <tr>
-                <td>#238400</td>
-                <td>Kisii</td>
-                <td>30000</td>
-                <td>NBCID24C</td>
-                <td>11:23PM</td>
-              </tr>
-              <tr>
-                <td>#238400</td>
                 <td>Turkana</td>
                 <td>30000</td>
                 <td>NBCID24C</td>
